@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Hospital Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .login-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        nav {
+    background-color: #103811;
+    overflow: hidden;
+    display: flex;
+    padding-bottom: 0%;
+
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+ 
+    <div class="container">
+      <nav style="margin-top: -11px;">
+        <div class="navbar">
+            <a href="homepage.html">Home</a>
+            <a href="#">Patient</a>
+            <a href="#">Doctor</a>
+            <a href="#">Lab</a>
+            <a href="#">Pharmacy</a>
+            <a href="#">Billing</a>
+            <a href="#">Reports</a>
+            <a href="help.html">Help</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            
+            <a href="index1.html" style="margin-left: 450px;">Login</a>
+            <a href="index1.html" style="margin-left: auto;" >Register</a>
+            
+            
+        </div>
+    </nav>
+        <h2>Patient Registration</h2>
+        
+        <form action="registration_handler.php" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <button type="submit">Register</button>
+        </form>
+        <div class="login-link">
+            Already have an account? <a href="login_patient.html">Login here</a>
+        </div>
+    </div>
+</body>
+</html>
+

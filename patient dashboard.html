@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard - E-Hospital Management System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Hospital System</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #103811;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: auto;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .appointment-form {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .appointment-form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .appointment-form input,
+        .appointment-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .appointment-form button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="patient dashboard.html" class="active">Patient</a>
+        <a href="doctor.html">Doctor</a>
+        <a href="lab.html">Lab</a>
+        <a href="pharma.html">Pharmacy</a>
+        <a href="billing.html">Billing</a>
+        <a href="reports.html">Reports</a>
+        <a href="help.html">Help</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="homepage.html" style="margin-left: 410px;">Logout</a>
+    </nav>
+    <div class="container">
+    <section>
+        <h2>Patient Dashboard</h2>
+
+        <div class="appointment-form">
+            <h3>Book an Appointment</h3>
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor" name="doctor">
+                <option value="dr-zareena">Dr. Zareena</option>
+                <option value="dr-bharath">Dr. Bharath</option>
+                <option value="dr-lahari">Dr. Lusi</option>
+                <option value="dr-smith">Dr. Smith</option>
+                <option value="dr-lalitha">Dr. Amy</option>
+                <option value="dr-teja">Dr. John</option>
+                
+            </select>
+
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date">
+
+            <label for="time">Select Time:</label>
+            <input type="time" id="time" name="time">
+
+            <button onclick="bookAppointment()">Book Appointment</button>
+        </div>
+    </section>
+    </div>
+
+    <footer>
+        &copy; 2024 E-Hospital Management System
+    </footer>
+
+    <script>
+        function bookAppointment() {
+            // Add your logic here to handle the booking process
+            alert("Appointment booked successfully!");
+        }
+    </script>
+
+</body>
+
+</html>

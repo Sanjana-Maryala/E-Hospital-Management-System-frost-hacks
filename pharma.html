@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacist Dashboard - E-Hospital Management System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #103811;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: auto;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .stock-details {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .stock-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .stock-item h3 {
+            margin-bottom: 8px;
+        }
+
+        .stock-item p {
+            margin-bottom: 0;
+        }
+
+        .delivery-btn {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="patient dashboard.html" class="active">Patient</a>
+        <a href="doctor.html">Doctor</a>
+        <a href="lab.html">Lab</a>
+        <a href="pharma.html">Pharmacy</a>
+        <a href="billing.html">Billing</a>
+        <a href="reports.html">Reports</a>
+        <a href="help.html">Help</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="homepage.html" style="margin-left: 410px;">Logout</a>
+    </nav>
+<div class="container">
+    <section>
+        <h2>Pharmacist Dashboard</h2>
+
+        <div class="stock-details">
+            <div class="stock-item">
+                <h3>Medicine-BRUFIN</h3>
+                <p>Stock: 100 units</p>
+                <button class="delivery-btn" onclick="processDelivery()">Process Delivery</button>
+            </div>
+
+            <div class="stock-item">
+                <h3>Medicine-SILICAZIB</h3>
+                <p>Stock: 20 units</p>
+                <button class="delivery-btn" onclick="processDelivery()">Process Delivery</button>
+            </div>
+
+            <div class="stock-item">
+                <h3>Medicine-RANITIDINE</h3>
+                <p>Stock: 200 units</p>
+                <button class="delivery-btn" onclick="processDelivery()">Process Delivery</button>
+            </div>
+
+            <div class="stock-item">
+                <h3>Medicine-DOLO 650</h3>
+                <p>Stock: 150 units</p>
+                <button class="delivery-btn" onclick="processDelivery()">Process Delivery</button>
+            </div>
+
+            <div class="stock-item">
+                <h3>Medicine-NAPROSYN</h3>
+                <p>Stock: 50 units</p>
+                <button class="delivery-btn" onclick="processDelivery()">Process Delivery</button>
+            </div>
+            <div class="stock-item">
+                <h3>Medicine-PARACETAMOL</h3>
+                <p>Stock: 100 units</p>
+                <button class="delivery-btn" onclick="processDelivery()">Process Delivery</button>
+            </div>
+
+        </div>
+    </section>
+</div>
+    <footer>
+        &copy; 2024 E-Hospital Management System
+    </footer>
+
+    <script>
+        function processDelivery() {
+            // Add your logic here to handle processing deliveries
+            alert("Delivery processed successfully!");
+        }
+
+
+    function orderStock(itemName) {
+        // Simulating the process of ordering more stock
+        alert(`Stock for ${itemName} ordered successfully!`);
+    }
+
+    function checkStockLevel(itemName) {
+        // Simulating checking the stock level
+        alert(`Stock level for ${itemName}: ${Math.floor(Math.random() * 100) + 1} units`);
+    }
+
+    function displayMessage() {
+        alert("This is a sample message!");
+    }
+
+    function logout() {
+        // In a real-world scenario, you would likely perform a server-side logout (e.g., destroy the session).
+        // For simplicity, we'll just redirect to the logout.html page.
+        window.location.href = "logout.html";
+    }
+</script>
+
+</body>
+</html>
+
+
+</body>
+
+</html>

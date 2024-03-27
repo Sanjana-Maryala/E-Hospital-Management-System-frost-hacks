@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+    h2 {
+      color: #333;
+    }
+    button {
+      padding: 10px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+    nav {
+    background-color: #103811;
+    overflow: hidden;
+    display: flex;
+    padding-bottom: 0%;
+
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="homepage.html">Home</a>
+    <a href="patient dashboard.html" class="active">Patient</a>
+    <a href="doctor.html">Doctor</a>
+    <a href="lab.html">Lab</a>
+    <a href="pharma.html">Pharmacy</a>
+    <a href="billing.html">Billing</a>
+    <a href="reports.html">Reports</a>
+    <a href="help.html">Help</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+  <h2>Patient details</h2>
+  
+  <!-- Buttons to navigate to Patient Login and Registration -->
+  <button onclick="redirectTo('login_patient.html')">Patient Login</button>
+  <button onclick="redirectTo('register_patient.html')">Patient Registration</button>
+  <br/>
+  <h2>Doctor details</h2>
+  <!-- Buttons to navigate to Doctor Login and Registration -->
+  <button onclick="redirectTo('login_doctor.html')">Doctor Login</button>
+  <button onclick="redirectTo('register_doctor.html')">Doctor Registration</button>
+
+  <script>
+    function redirectTo(page) {
+      window.location.href = page;
+    }
+  </script>
+</body>
+</html>

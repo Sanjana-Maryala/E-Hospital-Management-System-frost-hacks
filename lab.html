@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Admin Dashboard - E-Hospital Management System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #4e574f;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .test-results-list {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .test-results-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .test-results-item h3 {
+            margin-bottom: 8px;
+        }
+
+        .test-results-item p {
+            margin-bottom: 0;
+        }
+
+        .update-btn {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="patient dashboard.html" class="active">Patient</a>
+        <a href="doctor.html">Doctor</a>
+        <a href="lab.html">Lab</a>
+        <a href="pharma.html">Pharmacy</a>
+        <a href="billing.html">Billing</a>
+        <a href="reports.html">Reports</a>
+        <a href="help.html">Help</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="homepage.html" style="margin-left: 410px;">Logout</a>
+        
+    </nav>
+<div class="container">
+    <section>
+        <h2>Lab Admin Dashboard</h2>
+
+        <div class="test-results-list">
+            <div class="test-results-item">
+                <h3>Lab Test Result for Patient A</h3>
+                <p>Test: ECG Scanning</p>
+                <p>Result: High</p>
+                <button class="update-btn" onclick="updateTestResult()">Update Result</button>
+            </div>
+
+            <div class="test-results-item">
+                <h3>Lab Test Result for Patient B</h3>
+                <p>Test: BP Test</p>
+                <p>Result: Normal</p>
+                <button class="update-btn" onclick="updateTestResult()">Update Result</button>
+            </div>
+
+            <div class="test-results-item">
+                <h3>Lab Test Result for Patient C</h3>
+                <p>Test: Sugar Test</p>
+                <p>Result: High</p>
+                <button class="update-btn" onclick="updateTestResult()">Update Result</button>
+            </div>
+
+            <div class="test-results-item">
+                <h3>Lab Test Result for Patient D</h3>
+                <p>Test: EEG</p>
+                <p>Result: Low</p>
+                <button class="update-btn" onclick="updateTestResult()">Update Result</button>
+            </div>
+
+        </div>
+    </section>
+</div>
+    <footer>
+        &copy; 2024 E-Hospital Management System
+    </footer>
+
+    <script>
+        function updateTestResult() {
+            // Add your logic here to handle updating test results
+            alert("Test result updated successfully!");
+        }
+    </script>
+
+</body>
+
+</html>
